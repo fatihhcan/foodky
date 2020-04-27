@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "496045474080",
+    "firebase_url": "https://foodky-59697.firebaseio.com",
+    "project_id": "foodky-59697",
+    "storage_bucket": "foodky-59697.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:496045474080:android:708504652b8fb521b51745",
+        "android_client_info": {
+          "package_name": "com.example.solution"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "496045474080-c8a2thbsumrrk294jlk6jpl7l8v2lc8e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCPVcF15LnIVkf3ynccPuQGoNM9emCn40c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "496045474080-c8a2thbsumrrk294jlk6jpl7l8v2lc8e.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
