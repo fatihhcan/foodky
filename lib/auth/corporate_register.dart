@@ -42,6 +42,8 @@ class _CorporateRegisterState extends State<CorporateRegister> {
                   prefixIcon: Icon(Icons.business),
                 ),
               ),
+              SizedBox(height: 40, width: 40),
+
                TextField(
                 obscureText: false,
                 decoration: InputDecoration(
@@ -52,6 +54,8 @@ class _CorporateRegisterState extends State<CorporateRegister> {
                   prefixIcon: Icon(Icons.phone),
                 ),
               ),
+              SizedBox(height: 40, width: 40),
+
                TextField(
                 obscureText: false,
                 decoration: InputDecoration(
@@ -63,7 +67,7 @@ class _CorporateRegisterState extends State<CorporateRegister> {
                 ),
               ),
               SizedBox(height: 40, width: 40),
-               TextField(
+               /*TextField(
                 obscureText: true,
                 decoration: InputDecoration(
                   border: OutlineInputBorder(),
@@ -73,8 +77,8 @@ class _CorporateRegisterState extends State<CorporateRegister> {
                   prefixIcon: Icon(Icons.vpn_key),
                 ),
               ),
-              SizedBox(height: 40, width: 40),
-              Center(
+              SizedBox(height: 40, width: 40),*/
+              /*Center(
 
                 child: RaisedButton(
                   padding: EdgeInsets.fromLTRB(60, 10, 60, 10),
@@ -86,14 +90,14 @@ class _CorporateRegisterState extends State<CorporateRegister> {
                   //  Navigator.push(context, MaterialPageRoute(builder: (context)=>Register()));
                   }),
                   
-              ),
+              ),*/
                Center(
 
                 child: RaisedButton(
                   padding: EdgeInsets.fromLTRB(60, 10, 60, 10),
                   hoverColor: Colors.white,
                   color: Colors.orangeAccent,
-                  child: Text("Corporate Register",
+                  child: Text("Make an application",
                   style: TextStyle(color: Colors.white,fontFamily:"Montserrat",fontWeight: FontWeight.bold),),
                   onPressed: (){
                   //  Navigator.push(context, MaterialPageRoute(builder: (context)=>Register()));
