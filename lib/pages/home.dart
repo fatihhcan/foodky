@@ -1,8 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:solution/pages/profile.dart';
+import 'package:solution/pages/rest.dart';
 import 'package:solution/pages/score_board.dart';
 import 'package:solution/ui/googlemaps.dart';
+import 'package:solution/ui/landing.dart';
 import 'package:solution/ui/tabbar.dart';
+
+import 'hotels.dart';
+import 'hotels1.dart';
 
 class HomePage extends StatefulWidget {
   HomePage({Key key}) : super(key: key);
@@ -19,17 +24,6 @@ class _HomePageState extends State<HomePage> {
     });
   }
 
-  List<Widget> containers = [
-    Container(
-      color: Colors.black,
-    ),
-    Container(
-      color: Colors.blue,
-    ),
-    Container(
-      color: Colors.red,
-    ),
-  ];
   @override
   Widget build(BuildContext context) {
     return SafeArea(
@@ -41,6 +35,15 @@ class _HomePageState extends State<HomePage> {
           centerTitle: false,
           backgroundColor: Colors.orange.shade500,
         ),
+        floatingActionButton: FloatingActionButton(
+          child: Icon(Icons.add),
+          elevation: 1,
+          backgroundColor: Colors.orange,
+          onPressed: () {
+            Navigator.push(
+                context, MaterialPageRoute(builder: (context) => Leading()));
+          },
+        ),
         body: sayfaGoster(_seciliSayfa),
         bottomNavigationBar: BottomNavigationBar(
             type: BottomNavigationBarType.fixed,
@@ -50,6 +53,18 @@ class _HomePageState extends State<HomePage> {
               BottomNavigationBarItem(
                 icon: Icon(Icons.home),
                 title: Text("Home",
+                    style: TextStyle(
+                        fontFamily: "Montserrat", fontWeight: FontWeight.w800)),
+              ),
+              BottomNavigationBarItem(
+                icon: Icon(Icons.business),
+                title: Text("Hotels",
+                    style: TextStyle(
+                        fontFamily: "Montserrat", fontWeight: FontWeight.w800)),
+              ),
+              BottomNavigationBarItem(
+                icon: Icon(Icons.restaurant),
+                title: Text("Restaurants",
                     style: TextStyle(
                         fontFamily: "Montserrat", fontWeight: FontWeight.w800)),
               ),
@@ -74,13 +89,13 @@ class _HomePageState extends State<HomePage> {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: <Widget>[
-        //SizedBox(height:20),
+        //SizedBox(),
+
         Container(
           child: Expanded(
               child: ListView(
             scrollDirection: Axis.vertical,
             children: <Widget>[
-              //   FloatingActionButton(onPressed: () {}, child: Icon(Icons.add)),
               makeFeed(
                   userName: 'Pizza Ra',
                   userImage: 'assets/images/ra.jpg',
@@ -112,7 +127,7 @@ class _HomePageState extends State<HomePage> {
             ],
           )),
         ),
-          
+
         //  SizedBox(height:40),
       ],
     );
@@ -196,8 +211,12 @@ class _HomePageState extends State<HomePage> {
     if (seciliSayfa == 0) {
       return buildColumnHome();
     } else if (seciliSayfa == 1) {
-      return ScoreBoard();
+      return Hotels1();
     } else if (seciliSayfa == 2) {
+      return Rest();
+    } else if (seciliSayfa == 3) {
+      return ScoreBoard();
+    } else if (seciliSayfa == 4) {
       return ProfilePage();
     }
     return Container();
@@ -241,20 +260,3 @@ Widget makeReceive({isActive}) {
     ),
   );
 }
-
-Widget tabBar() => Scaffold(
-      appBar: AppBar(
-        title: Text("Foodzy"),
-        bottom: TabBar(tabs: <Widget>[
-          Tab(
-            icon: Icon(Icons.business),
-          ),
-          Tab(
-            icon: Icon(Icons.local_mall),
-          ),
-          Tab(
-            icon: Icon(Icons.add_shopping_cart),
-          ),
-        ]),
-      ),
-    );

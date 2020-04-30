@@ -1,54 +1,32 @@
 import 'package:flutter/material.dart';
 
-void main() => runApp(TabsApp());
+class TabBarNav extends StatefulWidget {
+  TabBarNav({Key key}) : super(key: key);
 
-class TabsApp extends StatelessWidget {
   @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Tabs App',
-      theme: ThemeData(primarySwatch: Colors.amber),
-      home: HomePage(),
-    );
-  }
+  _TabBarNavState createState() => _TabBarNavState();
 }
 
-class HomePage extends StatelessWidget {
-  List<Widget> containers = [
-    Container(
-      color: Colors.pink,
-    ),
-    Container(
-      color: Colors.blue,
-    ),
-    Container(
-      color: Colors.deepPurple,
-    )
-  ];
-
+class _TabBarNavState extends State<TabBarNav> {
   @override
   Widget build(BuildContext context) {
     return DefaultTabController(
       length: 3,
       child: Scaffold(
         appBar: AppBar(
-          title: Text('Foodky'),
           bottom: TabBar(
             tabs: <Widget>[
               Tab(
-                icon: Icon(Icons.access_alarm),
+                text: '2018',
               ),
               Tab(
-                icon: Icon(Icons.access_alarm),
+                text: '2019',
               ),
               Tab(
-                icon: Icon(Icons.access_alarm),
+                text: '2020',
               ),
             ],
           ),
-        ),
-        body: TabBarView(
-          children: containers,
         ),
       ),
     );

@@ -78,7 +78,7 @@ class _LoginScreenState extends State<LoginScreen> {
                 heightFactor: 2,
                 widthFactor: 2,
                 child: RaisedButton(
-                    padding: EdgeInsets.fromLTRB(100, 10, 100, 10),
+                    padding: EdgeInsets.fromLTRB(115, 10, 115, 10),
                     hoverColor: Colors.white,
                     color: Colors.orangeAccent,
                     child: Text(
@@ -105,10 +105,10 @@ class _LoginScreenState extends State<LoginScreen> {
                     
                   }
                   } */
-              SizedBox(height: 5, width: 5),
+
               Center(
                 child: RaisedButton(
-                    padding: EdgeInsets.fromLTRB(60, 10, 60, 10),
+                    padding: EdgeInsets.fromLTRB(71, 10, 71, 10),
                     hoverColor: Colors.white,
                     color: Colors.orangeAccent,
                     child: Text(

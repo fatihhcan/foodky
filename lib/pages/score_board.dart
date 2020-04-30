@@ -21,7 +21,7 @@ class _ScoreBoardState extends State<ScoreBoard> {
             FlatButton(
               color: Colors.orange,
               onPressed: () {},
-              child: Text("1- Pizza Ra",
+              child: Text("1- Pizza ACF",
                   style: TextStyle(
                       fontFamily: "Montserrat",
                       fontWeight: FontWeight.bold,
@@ -31,7 +31,7 @@ class _ScoreBoardState extends State<ScoreBoard> {
             FlatButton(
               color: Colors.blue,
               onPressed: () {},
-              child: Text("2- Lokanta Pera",
+              child: Text("2- Lokanta LCQ",
                   style: TextStyle(
                       fontFamily: "Montserrat",
                       fontWeight: FontWeight.bold,

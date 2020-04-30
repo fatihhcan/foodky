@@ -11,63 +11,104 @@ class _CorporateRegisterState extends State<CorporateRegister> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      resizeToAvoidBottomPadding: false,
-
-       body: Container(
-         padding: EdgeInsets.fromLTRB(50, 50, 50, 50),
-         
-         
+        resizeToAvoidBottomPadding: false,
+        body: Container(
+          padding: EdgeInsets.fromLTRB(50, 50, 50, 50),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
-             children: <Widget>[
-             SizedBox(height: 40, width: 40),
-             TextField(
+            children: <Widget>[
+              SizedBox(height: 20, width: 20),
+              TextField(
                 obscureText: false,
                 decoration: InputDecoration(
                   border: OutlineInputBorder(),
-                  enabledBorder: OutlineInputBorder(borderSide: BorderSide(color: Colors.orangeAccent,width: 1)),
-                  focusedBorder: OutlineInputBorder(borderSide: BorderSide(color:Colors.orangeAccent,width: 2)),
+                  enabledBorder: OutlineInputBorder(
+                      borderSide:
+                          BorderSide(color: Colors.orangeAccent, width: 1)),
+                  focusedBorder: OutlineInputBorder(
+                      borderSide:
+                          BorderSide(color: Colors.orangeAccent, width: 2)),
                   labelText: "Name - Surname",
                   prefixIcon: Icon(Icons.account_box),
                 ),
               ),
-              SizedBox(height: 40, width: 40),
-               TextField(
+              SizedBox(height: 20, width: 20),
+              TextField(
                 obscureText: false,
                 decoration: InputDecoration(
                   border: OutlineInputBorder(),
-                  enabledBorder: OutlineInputBorder(borderSide: BorderSide(color: Colors.orangeAccent,width: 1)),
-                  focusedBorder: OutlineInputBorder(borderSide: BorderSide(color:Colors.orangeAccent,width: 2)),
+                  enabledBorder: OutlineInputBorder(
+                      borderSide:
+                          BorderSide(color: Colors.orangeAccent, width: 1)),
+                  focusedBorder: OutlineInputBorder(
+                      borderSide:
+                          BorderSide(color: Colors.orangeAccent, width: 2)),
                   labelText: "Business Name",
                   prefixIcon: Icon(Icons.business),
                 ),
               ),
-              SizedBox(height: 40, width: 40),
-
-               TextField(
+              SizedBox(height: 20, width: 20),
+              TextField(
                 obscureText: false,
                 decoration: InputDecoration(
                   border: OutlineInputBorder(),
-                  enabledBorder: OutlineInputBorder(borderSide: BorderSide(color: Colors.orangeAccent,width: 1)),
-                  focusedBorder: OutlineInputBorder(borderSide: BorderSide(color:Colors.orangeAccent,width: 2)),
+                  enabledBorder: OutlineInputBorder(
+                      borderSide:
+                          BorderSide(color: Colors.orangeAccent, width: 1)),
+                  focusedBorder: OutlineInputBorder(
+                      borderSide:
+                          BorderSide(color: Colors.orangeAccent, width: 2)),
                   labelText: "Phone Number",
                   prefixIcon: Icon(Icons.phone),
                 ),
               ),
-              SizedBox(height: 40, width: 40),
-
-               TextField(
+              SizedBox(height: 20, width: 20),
+              TextField(
                 obscureText: false,
                 decoration: InputDecoration(
                   border: OutlineInputBorder(),
-                  enabledBorder: OutlineInputBorder(borderSide: BorderSide(color: Colors.orangeAccent,width: 1)),
-                  focusedBorder: OutlineInputBorder(borderSide: BorderSide(color:Colors.orangeAccent,width: 2)),
+                  enabledBorder: OutlineInputBorder(
+                      borderSide:
+                          BorderSide(color: Colors.orangeAccent, width: 1)),
+                  focusedBorder: OutlineInputBorder(
+                      borderSide:
+                          BorderSide(color: Colors.orangeAccent, width: 2)),
+                  labelText: "City",
+                  prefixIcon: Icon(Icons.location_city),
+                ),
+              ),
+              SizedBox(height: 20, width: 20),
+              TextField(
+                obscureText: false,
+                decoration: InputDecoration(
+                  border: OutlineInputBorder(),
+                  enabledBorder: OutlineInputBorder(
+                      borderSide:
+                          BorderSide(color: Colors.orangeAccent, width: 1)),
+                  focusedBorder: OutlineInputBorder(
+                      borderSide:
+                          BorderSide(color: Colors.orangeAccent, width: 2)),
+                  labelText: "Address",
+                  prefixIcon: Icon(Icons.contact_mail),
+                ),
+              ),
+              SizedBox(height: 20, width: 20),
+              TextField(
+                obscureText: false,
+                decoration: InputDecoration(
+                  border: OutlineInputBorder(),
+                  enabledBorder: OutlineInputBorder(
+                      borderSide:
+                          BorderSide(color: Colors.orangeAccent, width: 1)),
+                  focusedBorder: OutlineInputBorder(
+                      borderSide:
+                          BorderSide(color: Colors.orangeAccent, width: 2)),
                   labelText: "Email",
                   prefixIcon: Icon(Icons.email),
                 ),
               ),
-              SizedBox(height: 40, width: 40),
-               /*TextField(
+              SizedBox(height: 20, width: 20),
+              /*TextField(
                 obscureText: true,
                 decoration: InputDecoration(
                   border: OutlineInputBorder(),
@@ -91,25 +132,24 @@ class _CorporateRegisterState extends State<CorporateRegister> {
                   }),
                   
               ),*/
-               Center(
-
+              Center(
                 child: RaisedButton(
-                  padding: EdgeInsets.fromLTRB(60, 10, 60, 10),
-                  hoverColor: Colors.white,
-                  color: Colors.orangeAccent,
-                  child: Text("Make an application",
-                  style: TextStyle(color: Colors.white,fontFamily:"Montserrat",fontWeight: FontWeight.bold),),
-                  onPressed: (){
-                  //  Navigator.push(context, MaterialPageRoute(builder: (context)=>Register()));
-                  }),
-                  
+                    padding: EdgeInsets.fromLTRB(60, 10, 60, 10),
+                    hoverColor: Colors.white,
+                    color: Colors.orangeAccent,
+                    child: Text(
+                      "Make an application",
+                      style: TextStyle(
+                          color: Colors.white,
+                          fontFamily: "Montserrat",
+                          fontWeight: FontWeight.bold),
+                    ),
+                    onPressed: () {
+                      //  Navigator.push(context, MaterialPageRoute(builder: (context)=>Register()));
+                    }),
               ),
-             ],   
-           
-         
-       ),
-     )
-      );
-
+            ],
+          ),
+        ));
   }
 }
